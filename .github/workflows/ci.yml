@@ -35,7 +35,7 @@ jobs:
       - name: Check Docker Hub secrets exist
         id: secrets_check
         run: |
-          if [ -z "${{ secrets.DOCKERHUB_USERNAME }}" ] || [ -z "${{ secrets.DOCKERHUB_TOKEN }}" ]; then
+          if [ -z srinivaskamireddy ] || [ -z Srinivas@1234 ]; then
             echo "enabled=false" >> $GITHUB_OUTPUT
             echo "Docker Hub secrets missing. Skipping push."
           else
